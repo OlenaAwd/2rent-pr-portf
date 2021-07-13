@@ -365,7 +365,6 @@ header__logo{
     width: 250px;
     margin-right: 50px;
 }
-
 .footer__menu-link {
     font-size: 24px;
     line-height: 1.5;
@@ -410,6 +409,8 @@ header__logo{
     padding: 3px 0 23px;
     text-align: center;
 }
+
+
 @media(max-width: 1220px){
     .popular__item{
         width: 50%;
@@ -419,7 +420,38 @@ header__logo{
         width: 400px;
         height: 400px;
     }
+    .booking{
+        min-height: 80vh;
+    }
 }
+
+
+@media(max-width: 1140px){
+    .about__inner{
+        flex-wrap: wrap;
+    }
+    .reviews{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .blog{
+        margin-left: 150px;
+    }
+    .footer__top-inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer__menu{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .footer__menu-list{
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
 @media(max-width: 992px){
     .search__form{
         flex-wrap: wrap;
@@ -434,7 +466,63 @@ header__logo{
         width: 280px;
         height: 280px;
     }
+    .reason__inner{
+        flex-wrap: wrap;
+    }
+    .reason__item{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .reason__title{
+        min-height: 60px;
+        padding-left: 60px;
+    }
+    .reason__title::before{
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .booking{
+        min-height: 600px;
+    }
 }
+
+
+@media(max-width: 900px){
+    .about__inner{
+        display: block;
+    }
+    .our-managers{
+        margin: 0 auto;
+    }
+    .blog{
+        margin: 50px auto;
+        max-width: 420px;
+        width: auto;
+    }
+    .reviews{
+        margin: 0 auto;
+        max-width: 420px;
+    }
+    .footer__form{
+        flex-direction: column;
+    }
+    .footer__form-label{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .footer__form-input{
+        margin-bottom: 15px;
+        text-align: center;
+        width: 300px;
+        max-width: 500px;
+    }
+}
+
+
 @media(max-width: 768px){
     .header__logo{
         padding: 40px 0 30px;
@@ -451,7 +539,19 @@ header__logo{
     .popular__item{
         width: 100%;
     }
+    .booking{
+        min-height: 400px;
+    }
+    .footer__top,
+    .about,
+    .reason,
+    .popular__inner{
+        padding: 50px 0;
+    }
+
 }
+
+
 @media(max-width: 600px){
     .menu__list{
         display: block;
@@ -479,7 +579,16 @@ header__logo{
         line-height: 1.17;
         font-size: 36px;
     }
+    .reason__title{
+        font-size: 28px;
+        line-height: 1.15;
+    }
+    .booking__title{
+        font-size: 28px;
+        line-height: 1.15;
+    }
 }
+
 @media(max-width: 440px){
     .search__form-input{
         width: 100%;
@@ -490,5 +599,13 @@ header__logo{
     }
     .search__form-btn::before{
         display: none;
+    }
+}
+
+
+@media(max-width: 360px){
+    .reason__title{
+        font-size: 24px;
+        line-height: 1.15;
     }
 }
